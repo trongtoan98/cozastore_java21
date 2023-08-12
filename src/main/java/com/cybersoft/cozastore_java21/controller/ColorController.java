@@ -23,9 +23,10 @@ public class ColorController {
     @Autowired
     private ColorServiceImp colorServiceImp;
 
-    @GetMapping()
+    @GetMapping("")
     public ResponseEntity<?> getAllColor(){
         BaseResponse response = new BaseResponse();
+        response.setStatusCode(200);
         response.setData(colorServiceImp.getAllColor());
         String data = gson.toJson(response);
         logger.info(data);

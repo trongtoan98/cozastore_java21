@@ -6,4 +6,6 @@ import java.util.List;
 
 public interface ProductServiceImp {
     List<ProductResponse> getProductByCategory(int id);
+    List<ProductResponse> getAllProduct();
+    ProductResponse getProductByID(int id);
 }

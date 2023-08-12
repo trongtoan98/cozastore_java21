@@ -24,27 +24,39 @@ public class CategoryService implements CategoryServiceImp{
     @Override
 //    @Cacheable("listCategory")
     public List<CategoryResponse> getAllCategory() {
-        System.out.println("kiem tra category");
-        List<CategoryResponse> responseList = new ArrayList<>();
-        if(redisTemplate.hasKey("listCategory")){
-            System.out.println("có giá trị trên redis");
-//            nếu như có thì lấy giá trị lưu trên redis
-            String data = redisTemplate.opsForValue().get("listCategory").toString();
-            Type listType = new TypeToken<ArrayList<CategoryResponse>>(){}.getType();
-            responseList = new Gson().fromJson(data, listType);
-        }else {
-            System.out.println("không có giá trị trên redis");
-            List<CategoryEntity> list = categoryRepository.findAll();
-            for (CategoryEntity data : list) {
-                CategoryResponse categoryResponse = new CategoryResponse();
-                categoryResponse.setId(data.getId());
-                categoryResponse.setName(data.getName());
+//        System.out.println("kiem tra category");
+//        List<CategoryResponse> responseList = new ArrayList<>();
+//        if(redisTemplate.hasKey("listCategory")){
+//            System.out.println("có giá trị trên redis");
+////            nếu như có thì lấy giá trị lưu trên redis
+//            String data = redisTemplate.opsForValue().get("listCategory").toString();
+//            Type listType = new TypeToken<ArrayList<CategoryResponse>>(){}.getType();
+//            responseList = new Gson().fromJson(data, listType);
+//        }else {
+//            System.out.println("không có giá trị trên redis");
+//            List<CategoryEntity> list = categoryRepository.findAll();
+//            for (CategoryEntity data : list) {
+//                CategoryResponse categoryResponse = new CategoryResponse();
+//                categoryResponse.setId(data.getId());
+//                categoryResponse.setName(data.getName());
+//
+//                responseList.add(categoryResponse);
+//            }
+//            Gson gson = new Gson();
+//            String data = gson.toJson(responseList);
+//            redisTemplate.opsForValue().set("listCategory",data);
+//        }
 
-                responseList.add(categoryResponse);
-            }
-            Gson gson = new Gson();
-            String data = gson.toJson(responseList);
-            redisTemplate.opsForValue().set("listCategory",data);
+        List<CategoryResponse> responseList = new ArrayList<>();
+
+        List<CategoryEntity> list = categoryRepository.findAll();
+
+        for (CategoryEntity data : list) {
+            CategoryResponse categoryResponse = new CategoryResponse();
+            categoryResponse.setId(data.getId());
+            categoryResponse.setName(data.getName());
+
+            responseList.add(categoryResponse);
         }
 
         return responseList;

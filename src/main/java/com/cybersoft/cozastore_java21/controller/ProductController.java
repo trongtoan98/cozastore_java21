@@ -31,4 +31,22 @@ public class ProductController {
         logger.info(gson.toJson(response));
         return new ResponseEntity<>(response, HttpStatus.OK);
     }
+
+    @GetMapping("")
+    public ResponseEntity<?> getAllProduct() {
+        BaseResponse response = new BaseResponse();
+        response.setStatusCode(200);
+        response.setData(productServiceImp.getAllProduct());
+
+        return new ResponseEntity<>(response, HttpStatus.OK);
+    }
+
+    @GetMapping("/{id}")
+    public ResponseEntity<?> getProductById(@PathVariable int id) {
+        BaseResponse response = new BaseResponse();
+        response.setStatusCode(200);
+        response.setData(productServiceImp.getProductByID(id));
+
+        return new ResponseEntity<>(response, HttpStatus.OK);
+    }
 }

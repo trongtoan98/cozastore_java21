@@ -16,9 +16,10 @@ import org.springframework.web.bind.annotation.RestController;
 public class SizeController {
     @Autowired
     private SizeServiceImp sizeServiceImp;
-    @GetMapping()
+    @GetMapping("")
     public ResponseEntity<?> getAllSize(){
         BaseResponse response = new BaseResponse();
+        response.setStatusCode(200);
         response.setData(sizeServiceImp.getAllSize());
         return new ResponseEntity<>(response, HttpStatus.OK);
     }
