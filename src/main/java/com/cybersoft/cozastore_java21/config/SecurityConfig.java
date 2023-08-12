@@ -64,7 +64,7 @@ public class SecurityConfig {
 //                Java8,Java11: antMatchers
 //                java17~: requestAntMachers
 //                permitAll: cho phép vào luôn không cần chứng thực
-                    .antMatchers("/signin","/signup","/demo/**").permitAll()
+                .antMatchers("/signin","/signup","/demo/**","/category/**","/product/**","/size/**","/color/**").permitAll()
 //                hasRole: phải có quyền admin mới vào được
                     .anyRequest().authenticated()
                 .and()
