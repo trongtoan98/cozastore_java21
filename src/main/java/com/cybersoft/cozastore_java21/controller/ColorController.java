@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/color")
-@CrossOrigin("*")
+@CrossOrigin(origins = "*")
 public class ColorController {
     private Logger logger = LoggerFactory.getLogger(ColorController.class);
     private Gson gson = new Gson();

@@ -57,6 +57,7 @@ public class SecurityConfig {
 //        tắt cấu hình liên qua tới tấn công csrf
         return http.csrf().disable()
 // khai báo không sử dụng session trong project
+                .cors().and()
                 .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
                 .and()
 //                quy định cac rule liên quan tới tấn công tới chứng thực cho link chưa được gọi

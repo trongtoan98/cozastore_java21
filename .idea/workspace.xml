@@ -7,6 +7,23 @@
     <list default="true" id="33daa68f-c10e-42a2-a97b-0c5ca5e8b230" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/spring-boot-logger.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/spring-boot-logger.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cybersoft/cozastore_java21/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cybersoft/cozastore_java21/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cybersoft/cozastore_java21/controller/ColorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cybersoft/cozastore_java21/controller/ColorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cybersoft/cozastore_java21/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cybersoft/cozastore_java21/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cybersoft/cozastore_java21/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cybersoft/cozastore_java21/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cybersoft/cozastore_java21/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cybersoft/cozastore_java21/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cybersoft/cozastore_java21/payload/request/OrderRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cybersoft/cozastore_java21/payload/request/OrderRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cybersoft/cozastore_java21/repository/OrderDetailRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cybersoft/cozastore_java21/repository/OrderDetailRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cybersoft/cozastore_java21/repository/OrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cybersoft/cozastore_java21/repository/OrderRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cybersoft/cozastore_java21/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cybersoft/cozastore_java21/service/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cybersoft/cozastore_java21/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cybersoft/cozastore_java21/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cybersoft/cozastore_java21/service/imp/OrderServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cybersoft/cozastore_java21/service/imp/OrderServiceImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cybersoft/cozastore_java21/service/imp/UserServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cybersoft/cozastore_java21/service/imp/UserServiceImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cybersoft/cozastore_java21/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cybersoft/cozastore_java21/config/SecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cybersoft/cozastore_java21/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cybersoft/cozastore_java21/controller/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cybersoft/cozastore_java21/controller/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cybersoft/cozastore_java21/controller/ProductController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cybersoft/cozastore_java21/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cybersoft/cozastore_java21/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cybersoft/cozastore_java21/service/imp/UserServiceImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cybersoft/cozastore_java21/service/imp/UserServiceImp.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +33,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -46,6 +63,7 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;TODO_SCOPE&quot;: &quot;All Places&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/USER/Downloads/git_project/cozastore_java21&quot;
   }
 }</component>

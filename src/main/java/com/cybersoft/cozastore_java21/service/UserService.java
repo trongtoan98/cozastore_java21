@@ -3,6 +3,7 @@ package com.cybersoft.cozastore_java21.service;
 import com.cybersoft.cozastore_java21.entity.UserEntity;
 import com.cybersoft.cozastore_java21.exception.CustomException;
 import com.cybersoft.cozastore_java21.payload.request.SigupRequest;
+import com.cybersoft.cozastore_java21.payload.response.UserResponse;
 import com.cybersoft.cozastore_java21.repository.UserRepository;
 import com.cybersoft.cozastore_java21.service.imp.UserServiceImp;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,4 +34,12 @@ public class UserService implements UserServiceImp {
         }
         return isSuccess;
     }
+
+    @Override
+    public UserResponse getUserByEmail(String email) {
+        UserEntity user = userRepository.findByEmail(email);
+        UserResponse userResponse = new UserResponse(user.getId(), user.getEmail(), user.getUsername());
+        return userResponse;
+    }
+
 }

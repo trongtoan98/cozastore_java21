@@ -3,6 +3,7 @@ package com.cybersoft.cozastore_java21.controller;
 import com.cybersoft.cozastore_java21.exception.CustomException;
 import com.cybersoft.cozastore_java21.payload.request.SigupRequest;
 import com.cybersoft.cozastore_java21.payload.response.BaseResponse;
+import com.cybersoft.cozastore_java21.payload.response.UserResponse;
 import com.cybersoft.cozastore_java21.service.imp.UserServiceImp;
 import com.cybersoft.cozastore_java21.utils.JwtHelper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -63,4 +64,5 @@ public class LoginController {
         return new ResponseEntity<>(response, HttpStatus.OK);
 
     }
+
 }
